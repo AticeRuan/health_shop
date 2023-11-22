@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel';
-import { Container, useMediaQuery } from '@mui/material';
+// import { Container, useMediaQuery } from '@mui/material';
 import hero1 from "../assets/hero1.jpg";
 import hero2 from "../assets/hero2.jpg";
 import hero3 from "../assets/hero3.jpg";
