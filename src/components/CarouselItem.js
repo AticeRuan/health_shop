@@ -20,7 +20,7 @@ const CarouselItem = ({imageUrl,title,desc,buttonText,href}) => {
     backgroundSize:"cover", backgroundRepeat:"no-repeat",backgroundClip:"text",WebkitBackgroundClip:"text"}}>{title}</Typography>
         <Box sx={{width:"50vw"}}>
         <Typography variant='h6' color="#ffffff" gutterBottom sx={{fontSize:{xs:".8rem",sm:"1rem",md:"1.2rem"}}}>{desc}</Typography></Box>
-        <Button variant='contained' size='large' sx={{mt:10}} href={href}>{buttonText}</Button>      
+        <Button variant='contained' size={'large'} sx={{mt:10,fontSize:{xs:"0.7rem",sm:"0.8rem",md:"1rem"}}} href={href}>{buttonText}</Button>      
     </Box>
     </Box>
     // <Grid container sx={{width:"100vw"}}>

@@ -16,20 +16,10 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link as MuiLink } from '@mui/material';
 import logo from '../assets/logo.png'
-
+import {navItems} from '../components/utils'
 
 const drawerWidth = 240;
-const navItems = [
-  {item:"Home",
-link:"/"},
-{item:"Services",
-link:"/services"},
-{item:"About",
-link:"/about"},
-{item:"Contact",
-link:"/contact"}
 
-];
 
 const Layout = ({window}) => {
   const [mobileOpen, setMobileOpen] = useState(false);
