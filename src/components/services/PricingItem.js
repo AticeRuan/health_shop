@@ -8,21 +8,24 @@ const PricingItem = ({ serviceName, duration, price }) => {
       {isSmallScreen ? (
         <Container sx={{m:2}}>
             
-            <Typography variant='h6'>
+            <Typography variant='h6' color="secondary" sx={{fontSize:'1.1rem'}}>
             {serviceName}
-            </Typography><Box sx={{display:"flex",justifyContent:"center"}}>
-            <Typography variant='subtitle1' >
+            </Typography>
+            <Box sx={{display:"flex",justifyContent:"left", mt:1}}>
+            <Typography variant='body2' >
             {duration}
             </Typography>
-            <Typography variant='subtitle1' sx={{ml:10}}>
+            <Typography variant='body2' sx={{ml:10}}>
             ${price}
-            </Typography></Box>
+            </Typography>
+            </Box>
+            <Divider light variant='middle' sx={{mt:1,borderStyle:"dotted"}}/>
             </Container>
         
       ) : (
         <Grid container sx={{m:2}}>
           <Grid item xs={6}>
-          <Typography variant='h6' gutterBottom>
+          <Typography variant='h6' gutterBottom color="secondary" >
             {serviceName}
             </Typography>
           </Grid>
@@ -36,7 +39,8 @@ const PricingItem = ({ serviceName, duration, price }) => {
             ${price}
             </Typography>
           </Grid>
-          <Divider/>
+          <Grid item xs={10}>
+          <Divider variant="fullwidth" sx={{borderStyle:"dashed"}}/></Grid>
         </Grid>
         
       )}

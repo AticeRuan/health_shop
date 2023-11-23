@@ -29,10 +29,8 @@ const Layout = ({window}) => {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',backgroundColor:"#000",height:"100%" }}>
-      <Typography variant="subtitle1" color="text.secondary" sx={{ my: 2,fontFamily:"Dancing Script" }}>
-        Health Lounge Papamoa
-      </Typography>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',backgroundColor:"#000",height:"100%",pt:2 }}>
+      <img src={logo} alt='logo' width="40px" height="auto" />
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -62,19 +60,19 @@ const Layout = ({window}) => {
         >
           <MenuIcon />
         </IconButton>
-        <Box sx={{display: { xs: 'none', sm: 'block'}}}><img src={logo} alt='logo' width="40px" height="auto" /></Box>
+        <Button href='/' sx={{display: { xs: 'none', sm: 'block'}}}><img src={logo} alt='logo' width="40px" height="auto" /></Button>
         
            
         <Typography
           variant="h4"
           component="div"
-          sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block'},fontFamily:"Dancing Script",fontWeight:"400",letterSpacing:"2px",marginLeft:"20px" ,fontSize:{sm:"1.1rem",md:"1.5rem"}}}
+          sx={{ flexGrow: 1, fontFamily:"Dancing Script",fontWeight:"400",letterSpacing:"2px",marginLeft:"20px" ,fontSize:{xs:"1.8rem",sm:"1.1rem",md:"1.5rem"}}}
         >
           Health Lounge Papamoa
         </Typography>
         <Box sx={{ display: { xs: 'none', sm: 'block' },justifyContent:"right" }}>
           {navItems.map((item) => (
-            <MuiLink to={item.link} component={Link}  underline="none"><Button key={item.item} sx={{ color: '#fff',fontSize:{sm:"0.7rem",md:"0.8rem",lg:"1rem"} }}>
+            <MuiLink key={item.item} to={item.link} component={Link}  underline="none"><Button key={item.item} sx={{ color: '#fff',fontSize:{sm:"0.7rem",md:"0.8rem",lg:"0.8rem",xl:'0.9rem'} }}>
               {item.item}
             </Button></MuiLink>
           ))}

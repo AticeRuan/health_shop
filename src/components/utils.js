@@ -13,7 +13,8 @@ export const carouselItems=[
       alt: 'massage',
       title:'Reflexology',
       desc:'Revitalize Your Sole, Unwind Your Whole: Reflexology Full Body Massage, Where Relaxation Meets Rejuvenation',
-      buttonText:'Enquiry NOW'
+      buttonText:'Enquiry NOW',
+      href:'/contact'
     },
     {
       imgUrl: hero2,
@@ -34,14 +35,16 @@ export const carouselItems=[
       alt: 'maniicure',
       title:'Manicure and Pedicure',
       desc:'Pamper Your Hands and Feet: Precision Care, Immaculate Style.',
-      buttonText:'Enquiry NOW'
+      buttonText:'Enquiry NOW',
+      href:'/contact'
     },
     {
       imgUrl: hero5,
       alt: 'facial',
       title:'Facial Relaxation',
       desc:'Revitalize Your Radiance: Unveil the Beauty Within.',
-      buttonText:'Enquiry NOW'
+      buttonText:'Enquiry NOW',
+      href:'/contact'
     },
     {
       imgUrl: hero6,

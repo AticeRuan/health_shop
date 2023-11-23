@@ -8,11 +8,12 @@ import {carouselItems} from '../components/utils'
 
 
 
+
 const Home = () => {
 
   return (
    
-     
+     <>
     <Carousel
            
       animation="fade"
@@ -35,6 +36,8 @@ const Home = () => {
         />
       ))}
     </Carousel>
+  
+    </>
   )
 }
 

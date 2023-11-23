@@ -7,8 +7,8 @@ export const Pricing = ({serviceCategory,serviceItems,isSmallScreen=false}) => {
   return (
     <>
     
-      <Box >
-        {!isSmallScreen&&<Typography variant="h4">{serviceCategory}</Typography>}
+      <Box  >
+        {!isSmallScreen&&<Typography variant="h4" sx={{mt:5}}>{serviceCategory}</Typography>}
         
         {serviceItems.map((item) => (
           <PricingItem key={item.serviceName} serviceName={item.serviceName} duration={item.serviceDuration} price={item.servicePrice} />
@@ -30,8 +30,8 @@ export const FoldedTab = ({handleChange,expanded,serviceCategory, serviceItems, 
           expanded={expanded}
           sx={{ mb: 5, borderBottom: 'none', '&:before': { backgroundColor: "transparent" } }}
         >
-          <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls={`${serviceCategory}-content`} sx={{ borderBottom: "none!important" }}>
-            <Typography variant='h5'>{serviceCategory}</Typography>
+          <AccordionSummary expandIcon={<ExpandMoreIcon color='secondary' />} aria-controls={`${serviceCategory}-content`} sx={{ borderBottom: "none!important" }}>
+            <Typography variant='h6' color="text.secondary">{serviceCategory}</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{ borderBottom: "none!important" }}>
             <Pricing serviceCategory={serviceCategory} serviceItems={serviceItems} isSmallScreen={isSmallScreen} />
