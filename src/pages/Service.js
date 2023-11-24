@@ -55,7 +55,7 @@ const Service = () => {
             sx={{ backgroundColor: 'rgba(255,255,255,0.8)', height: '100%' }}
           >
             {isSmallScreen ? (
-              <Container sx={{ pt: '100px' }}>
+              <Container sx={{ pt: '100px', mb: 5 }}>
                 <FoldedTab
                   serviceCategory="Massage"
                   serviceItems={massageItems}
