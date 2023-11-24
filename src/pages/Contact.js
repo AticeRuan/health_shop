@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Grid, Box, Typography, Divider, Fade } from '@mui/material'
 import background from '../assets/contact_background.jpg'
 import EnquiryForm from '../components/Form/EnquiryForm'
 import SpaIcon from '@mui/icons-material/Spa'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import PhoneIcon from '@mui/icons-material/Phone'
-
+import CircularProgress from '@mui/material/CircularProgress'
 const Contact = () => {
-  return (
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
+  return loading ? (
+    <Box sx={{ mt: 50, display: 'flex', justifyContent: 'center' }}>
+      <CircularProgress />
+    </Box>
+  ) : (
     <Fade in timeout={1000}>
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>

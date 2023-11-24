@@ -13,6 +13,7 @@ export const Pricing = ({
   serviceCategory,
   serviceItems,
   isSmallScreen = false,
+  intro,
 }) => {
   return (
     <>
@@ -22,6 +23,11 @@ export const Pricing = ({
             {serviceCategory}
           </Typography>
         )}
+
+        <Typography variant="h6" sx={{ fontSize: '1rem', my: 3 }}>
+          {' '}
+          {intro}
+        </Typography>
 
         {serviceItems.map((item) => (
           <PricingItem
@@ -41,6 +47,7 @@ export const FoldedTab = ({
   serviceCategory,
   serviceItems,
   isSmallScreen = false,
+  intro,
 }) => {
   return (
     <>
@@ -67,6 +74,7 @@ export const FoldedTab = ({
             serviceCategory={serviceCategory}
             serviceItems={serviceItems}
             isSmallScreen={isSmallScreen}
+            intro={intro}
           />
         </AccordionDetails>
       </Accordion>

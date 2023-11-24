@@ -17,6 +17,7 @@ import Button from '@mui/material/Button'
 import { Link as MuiLink } from '@mui/material'
 import logo from '../assets/logo.png'
 import { navItems } from '../components/utils'
+import Footer from '../components/Footer'
 
 const drawerWidth = 240
 
@@ -78,21 +79,33 @@ const Layout = ({ window }) => {
             <Button href="/" sx={{ display: { xs: 'none', sm: 'block' } }}>
               <img src={logo} alt="logo" width="40px" height="auto" />
             </Button>
-
-            <Typography
-              variant="h4"
-              component="div"
+            <Box
               sx={{
                 flexGrow: 1,
-                fontFamily: 'Dancing Script',
-                fontWeight: '400',
-                letterSpacing: '2px',
                 marginLeft: '20px',
-                fontSize: { xs: '1.8rem', sm: '1.1rem', md: '1.5rem' },
               }}
             >
-              Health Lounge Papamoa
-            </Typography>
+              <Typography
+                variant="h1"
+                component="div"
+                sx={{
+                  // flexGrow: 1,
+                  // fontFamily: 'Dancing Script',
+                  fontWeight: '400',
+                  letterSpacing: '2px',
+
+                  fontSize: { xs: '1.8rem', sm: '1.1rem', md: '1.5rem' },
+                }}
+              >
+                Health Lounge Papamoa
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: '0.8rem', sm: '0.8rem', md: '0.7rem' } }}
+              >
+                Affordable Wellness
+              </Typography>
+            </Box>
             <Box
               sx={{
                 display: { xs: 'none', sm: 'block' },
@@ -147,6 +160,7 @@ const Layout = ({ window }) => {
         </nav>
       </Box>
       <Outlet />
+      <Footer />
     </>
   )
 }

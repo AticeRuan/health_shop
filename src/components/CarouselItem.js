@@ -47,6 +47,7 @@ const CarouselItem = ({
           sx={{
             fontSize: { xs: '2rem', sm: '3rem', md: '6rem' },
             mt: 7,
+            fontFamily: 'Archivo Black',
             backgroundImage: `url(${imageUrl})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',

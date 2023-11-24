@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container, useMediaQuery, Box, Fade, Tab } from '@mui/material'
 import {
   massageItems,
@@ -11,6 +11,7 @@ import {
 import { Pricing, FoldedTab } from '../components/services/Pricing'
 // import background from '../assets/service_barckground.jpg'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
+import CircularProgress from '@mui/material/CircularProgress'
 const Service = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'))
   const [expanded, setExpanded] = useState(null)
@@ -24,7 +25,20 @@ const Service = () => {
   const handleTabChange = (event, newValue) => {
     setValue(newValue)
   }
-  return (
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000)
+  }, [])
+
+  return loading ? (
+    <Box sx={{ mt: 50, display: 'flex', justifyContent: 'center' }}>
+      <CircularProgress />
+    </Box>
+  ) : (
     <>
       <Fade in timeout={1000}>
         <Box
@@ -48,6 +62,13 @@ const Service = () => {
                   isSmallScreen={isSmallScreen}
                   expanded={expanded === 'panel1'}
                   handleChange={handleChange('panel1')}
+                  intro="Consider a massage experience that goes beyond physical
+                  relaxation, tapping into the energetic pathways
+                  identified by Huangdi Neijing. By incorporating
+                  acupressure or reflexology techniques, practitioners can
+                  stimulate specific points along the meridians, promoting
+                  the smooth flow of Qi and fostering balance within the
+                  body"
                 />
                 <FoldedTab
                   serviceCategory="Facial"
@@ -55,6 +76,7 @@ const Service = () => {
                   isSmallScreen={isSmallScreen}
                   expanded={expanded === 'panel2'}
                   handleChange={handleChange('panel2')}
+                  intro="Traditional Chinese medicine places significant importance on the connection between facial features and internal organ health. A facial treatment that incorporates acupoint stimulation, can trigger lymphatic drainage, improve circulation, and promote a radiant complexion in alignment with Huangdi Neijing's holistic principles. "
                 />
                 <FoldedTab
                   serviceCategory="Waxing"
@@ -83,6 +105,7 @@ const Service = () => {
                   isSmallScreen={isSmallScreen}
                   expanded={expanded === 'panel6'}
                   handleChange={handleChange('panel6')}
+                  intro="Cupping, a traditional Chinese therapy, involves placing cups on the skin to create suction. This practice, when integrated into body treatments, can promote blood flow, alleviate muscle tension, and enhance the overall balance of Qi within the body.And Guasha is rooted in Huangdi Neijing's principles. This ancient Chinese technique involves gentle scraping to stimulate Qi flow, promoting vitality and balance. "
                 />
               </Container>
             ) : (
@@ -101,6 +124,13 @@ const Service = () => {
                       serviceCategory="Massage"
                       serviceItems={massageItems}
                       isSmallScreen={isSmallScreen}
+                      intro="Consider a massage experience that goes beyond physical
+                  relaxation, tapping into the energetic pathways
+                  identified by Huangdi Neijing. By incorporating
+                  acupressure or reflexology techniques, practitioners can
+                  stimulate specific points along the meridians, promoting
+                  the smooth flow of Qi and fostering balance within the
+                  body"
                     />
                   </TabPanel>
                   <TabPanel value="2">
@@ -108,6 +138,7 @@ const Service = () => {
                       serviceCategory="Facial"
                       serviceItems={facialItems}
                       isSmallScreen={isSmallScreen}
+                      intro="Traditional Chinese medicine places significant importance on the connection between facial features and internal organ health. A facial treatment that incorporates acupoint stimulation, can trigger lymphatic drainage, improve circulation, and promote a radiant complexion in alignment with Huangdi Neijing's holistic principles. "
                     />
                   </TabPanel>
                   <TabPanel value="3">
@@ -136,6 +167,7 @@ const Service = () => {
                       serviceCategory="Chinese Essence Therapies"
                       serviceItems={traditionalItems}
                       isSmallScreen={isSmallScreen}
+                      intro="Cupping, a traditional Chinese therapy, involves placing cups on the skin to create suction. This practice, when integrated into body treatments, can promote blood flow, alleviate muscle tension, and enhance the overall balance of Qi within the body. And Guasha is rooted in Huangdi Neijing's principles. This ancient Chinese technique involves gentle scraping to stimulate Qi flow, promoting vitality and balance. "
                     />
                   </TabPanel>
                 </TabContext>

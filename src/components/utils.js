@@ -4,6 +4,7 @@ import hero3 from '../assets/hero3.jpg'
 import hero4 from '../assets/hero4.jpg'
 import hero5 from '../assets/hero5.jpg'
 import hero6 from '../assets/hero6.jpg'
+import hero7 from '../assets/hero7.jpg'
 
 // export const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 export const carouselItems = [
@@ -18,7 +19,7 @@ export const carouselItems = [
   {
     imgUrl: hero2,
     alt: 'traditional remedy',
-    title: 'Huangdi Neijing spirituality',
+    title: 'Huangdi Neijing Spirituality',
     desc: 'Inner Canon of the Yellow Emperor: Embracing the Wisdom of Huangdi Neijing',
     buttonText: 'Learn More',
     id: 'block1',
@@ -27,7 +28,7 @@ export const carouselItems = [
   {
     imgUrl: hero3,
     alt: 'traditional remedy',
-    title: 'Herbal remeday',
+    title: 'Herbal Remeday',
     desc: 'Natural Cure, Rooted in Tradition: Harnessing Wellness with Chinese Herbal Harmony',
     buttonText: 'Learn More',
     id: 'block2',
@@ -48,6 +49,14 @@ export const carouselItems = [
     desc: 'Revitalize Your Radiance: Unveil the Beauty Within.',
     buttonText: 'Enquiry NOW',
     href: '/contact',
+  },
+  {
+    imgUrl: hero7,
+    alt: 'cupping',
+    title: 'Chinese Essence Therapy',
+    desc: ' Unveil Harmony, Restore Vitality, and Elevate Your Well-being with Ancient Wisdom and Modern Care',
+    buttonText: 'Enquiry NOW',
+    href: '/services',
   },
   {
     imgUrl: hero6,

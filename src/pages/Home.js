@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Carousel from 'react-material-ui-carousel'
 import CarouselItem from '../components/CarouselItem'
 import { carouselItems } from '../components/utils'
@@ -13,30 +13,36 @@ import {
 import block1 from '../assets/service_barckground.jpg'
 import block2 from '../assets/herbal.jpg'
 import SpaIcon from '@mui/icons-material/Spa'
-// import Loader from '../components/Loader'
+
 import BackToTopButton from '../components/BackToTopButton'
+import CircularProgress from '@mui/material/CircularProgress'
 
 const Home = () => {
-  // const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, 1000)
-  // })
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  })
 
-  return (
+  return loading ? (
+    <Box sx={{ mt: 50, display: 'flex', justifyContent: 'center' }}>
+      <CircularProgress />
+    </Box>
+  ) : (
     <>
       <BackToTopButton />
+
       <Carousel
         animation="fade"
         navButtonsAlwaysinVisible
-        indicators={false}
+        indicators={true}
         sx={{
           textAlign: 'center',
           marginTop: '50px',
           width: '100%',
-          height: { xs: '100%', lg: '90vh' },
+          height: { xs: '100%', lg: '70vh' },
         }}
         interval={3000}
       >
@@ -52,6 +58,7 @@ const Home = () => {
           />
         ))}
       </Carousel>
+
       <Container sx={{ width: { xs: '80vw', md: '50vw' }, mt: 5 }}>
         <Divider
           variant="fullwidth"
