@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 5000)
   })
 
   return loading ? (
@@ -120,7 +120,7 @@ const Home = () => {
         <Grid container sx={{ pt: 5, alignItems: 'center', p: 2 }}>
           <Grid item xs={12} md={6}>
             <Box sx={{ p: 4 }}>
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ fontSize: '1rem' }}>
                 Huangdi Neijing, also known as the Yellow Emperor's Inner Canon,
                 stands as a cornerstone in traditional Chinese medicine,
                 offering profound insights into the intricate balance between
@@ -159,7 +159,7 @@ const Home = () => {
         >
           <Grid item xs={12} md={6}>
             <Box sx={{ p: 4 }}>
-              <Typography variant="h3" sx={{ fontFamily: 'Dancing Script' }}>
+              <Typography variant="h3" sx={{ fontFamily: 'Caveat' }}>
                 “Harmony within oneself breeds vitality”
               </Typography>
               <Typography variant="h6" align="right">
@@ -177,7 +177,7 @@ const Home = () => {
                 px: 5,
               }}
             >
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ fontSize: '1rem' }}>
                 At its core, Huangdi Neijing espouses the concept of balance,
                 emphasizing the harmony between opposing forces – the
                 fundamental principles of Yin and Yang. It outlines the flow of
@@ -248,7 +248,7 @@ const Home = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Box sx={{ p: 4, pr: { xl: 20 } }}>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" gutterBottom sx={{ fontSize: '1rem' }}>
                 Embark on a journey of herbal indulgence with our homemade
                 Chinese herbal teas, meticulously crafted to elevate your
                 well-being. Sip the warmth of traditional remedies as you
@@ -264,7 +264,7 @@ const Home = () => {
                 modern comfort, creating a sanctuary of health and flavor in
                 your daily ritual.
               </Typography>
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ fontSize: '1rem' }}>
                 Each blend serves a distinct purpose – whether it's the soothing
                 embrace of chamomile for relaxation or the invigorating kick of
                 ginseng for an energy boost. Discover the art of healing in
@@ -284,8 +284,8 @@ const Home = () => {
           }}
         >
           <Grid item xs={12}>
-            <Box sx={{ p: 4 }}>
-              <Typography variant="h4" sx={{ fontFamily: 'Dancing Script' }}>
+            <Box sx={{ p: { xs: 6, lg: 10, xl: 15 } }}>
+              <Typography variant="h4" sx={{ fontFamily: 'Caveat' }}>
                 “The five organs respond to the four seasons, a hundred diseases
                 compete to manifest; all of this is in accordance with the
                 balance, desiring to allow them to follow their natural course.”
