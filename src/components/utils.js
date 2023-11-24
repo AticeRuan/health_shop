@@ -14,7 +14,7 @@ export const carouselItems = [
     title: 'Reflexology',
     desc: 'Revitalize Your Sole, Unwind Your Whole: Reflexology Full Body Massage, Where Relaxation Meets Rejuvenation',
     buttonText: 'Enquiry NOW',
-    href: '/contact',
+    link: '/contact',
   },
   {
     imgUrl: hero2,
@@ -40,7 +40,7 @@ export const carouselItems = [
     title: 'Manicure and Pedicure',
     desc: 'Pamper Your Hands and Feet: Precision Care, Immaculate Style.',
     buttonText: 'Enquiry NOW',
-    href: '/contact',
+    link: '/contact',
   },
   {
     imgUrl: hero5,
@@ -48,7 +48,7 @@ export const carouselItems = [
     title: 'Facial Relaxation',
     desc: 'Revitalize Your Radiance: Unveil the Beauty Within.',
     buttonText: 'Enquiry NOW',
-    href: '/contact',
+    link: '/contact',
   },
   {
     imgUrl: hero7,
@@ -56,7 +56,7 @@ export const carouselItems = [
     title: 'Chinese Essence Therapy',
     desc: ' Unveil Harmony, Restore Vitality, and Elevate Your Well-being with Ancient Wisdom and Modern Care',
     buttonText: 'Enquiry NOW',
-    href: '/services',
+    link: '/services',
   },
   {
     imgUrl: hero6,
@@ -64,7 +64,7 @@ export const carouselItems = [
     title: 'More services avaiable',
     desc: 'Targeted massage,precision waxing solutions,precision brow sculpting and tinting and more...',
     buttonText: 'See Details',
-    href: '/services',
+    link: '/services',
   },
 ]
 

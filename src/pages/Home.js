@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 5000)
+    }, 2000)
   })
 
   return loading ? (
@@ -55,6 +55,7 @@ const Home = () => {
             buttonText={item.buttonText}
             href={item.href}
             id={item.id}
+            link={item.link}
           />
         ))}
       </Carousel>
@@ -143,7 +144,10 @@ const Home = () => {
               <Avatar
                 src={block1}
                 alt="huangdineijing"
-                sx={{ height: '450px', width: '450px' }}
+                sx={{
+                  height: { xs: '300px', md: '450px' },
+                  width: { xs: '300px', md: '450px' },
+                }}
               />
             </Box>
           </Grid>
@@ -242,7 +246,10 @@ const Home = () => {
               <Avatar
                 src={block2}
                 alt="herbal tea"
-                style={{ height: '450px', width: '450px' }}
+                sx={{
+                  height: { xs: '300px', md: '450px' },
+                  width: { xs: '300px', md: '450px' },
+                }}
               />
             </Box>
           </Grid>

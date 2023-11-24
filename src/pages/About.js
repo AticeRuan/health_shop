@@ -43,7 +43,10 @@ const About = () => {
           <Typography
             variant="h3"
             color="#ffffff"
-            sx={{ fontFamily: 'Dancing script' }}
+            sx={{
+              fontFamily: 'Dancing script',
+              fontSize: { xs: '2rem', sm: '3rem' },
+            }}
           >
             Health Lounge Papamoa
           </Typography>
@@ -92,22 +95,32 @@ const About = () => {
               <img src={wendy} alt="owner" width="200px" />
             </Box>
           </Grid>
-          <Grid item xs={12} md={6} textAlign="left">
-            <Typography
-              variant="h6"
-              sx={{ fontSize: '1rem', mt: 2, mr: { xs: 2, md: 10 }, ml: 2 }}
+          <Grid item xs={12} md={6} xl={4} textAlign="left">
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                height: '100%',
+              }}
             >
-              Hello, I'm Wendy, the passionate owner and massage therapist at
-              Health Lounge Papamoa. With over ten years of Chinese massage
-              experience and eight years specializing in beauty treatments in
-              NZ, I've dedicated five years to studying Huangdi Neijing. My
-              approach integrates traditional Chinese medication and herbal teas
-              into our rejuvenating treatments, garnering positive customer
-              feedback for a truly holistic wellness experience. Join me on a
-              journey of relaxation and vitality at Health Lounge Papamoa, where
-              ancient traditions and modern care converge. Your well-being is my
-              priority.
-            </Typography>
+              <Typography
+                variant="h6"
+                sx={{ fontSize: '1rem', mt: 2, mr: { xs: 2, md: 10 }, ml: 2 }}
+              >
+                Hello, I'm Wendy, the passionate owner and massage therapist at
+                Health Lounge Papamoa. With over ten years of Chinese massage
+                experience and eight years specializing in beauty treatments in
+                NZ, I've dedicated five years to studying Huangdi Neijing. My
+                approach integrates traditional Chinese medication and herbal
+                teas into our rejuvenating treatments, garnering positive
+                customer feedback for a truly holistic wellness experience. Join
+                me on a journey of relaxation and vitality at Health Lounge
+                Papamoa, where ancient traditions and modern care converge. Your
+                well-being is my priority.
+              </Typography>
+            </Box>
           </Grid>
         </Grid>
         <Divider
@@ -129,12 +142,13 @@ const About = () => {
             mb: 10,
 
             flexDirection: { xs: 'column', md: 'row' },
+            mt: 3,
           }}
         >
           <Avatar
             src={home}
             alt="setting"
-            sx={{ height: '200px', width: '200px', mr: 10 }}
+            sx={{ height: '200px', width: '200px', mr: { xs: 0, md: 10 } }}
           />
 
           <Box
@@ -187,7 +201,7 @@ const About = () => {
           <Avatar
             src={yingyang}
             alt="setting"
-            sx={{ height: '200px', width: '200px', ml: 10 }}
+            sx={{ height: '200px', width: '200px', ml: { xs: 0, md: 10 } }}
           />
         </Box>
 
@@ -204,7 +218,7 @@ const About = () => {
           <Avatar
             src={cheap}
             alt="setting"
-            sx={{ height: '200px', width: '200px', mr: 10 }}
+            sx={{ height: '200px', width: '200px', mr: { xs: 0, md: 10 } }}
           />
 
           <Box
@@ -257,7 +271,7 @@ const About = () => {
           <Avatar
             src={thumbup}
             alt="setting"
-            sx={{ height: '200px', width: '200px', ml: 10 }}
+            sx={{ height: '200px', width: '200px', ml: { xs: 0, md: 10 } }}
           />
         </Box>
       </Box>

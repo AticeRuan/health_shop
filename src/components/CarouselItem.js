@@ -1,5 +1,6 @@
 import { Typography, Button, Box } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CarouselItem = ({
   imageUrl,
@@ -7,7 +8,7 @@ const CarouselItem = ({
   desc,
   buttonText,
   href,
-
+  link,
   id,
 }) => {
   const handleScroll = (id) => {
@@ -72,6 +73,8 @@ const CarouselItem = ({
           sx={{ mt: 10, fontSize: { xs: '0.7rem', sm: '0.8rem', md: '1rem' } }}
           href={href}
           onClick={() => handleScroll(id)}
+          LinkComponent={Link}
+          to={link}
         >
           {buttonText}
         </Button>
