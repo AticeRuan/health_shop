@@ -65,7 +65,10 @@ const Layout = ({ window }) => {
       {' '}
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
-        <AppBar component="nav" sx={{ boxShadow: 'none' }}>
+        <AppBar
+          component="nav"
+          sx={{ boxShadow: 'none', py: { xs: 1, sm: 0 } }}
+        >
           <Toolbar>
             <IconButton
               color="inherit"
@@ -94,7 +97,7 @@ const Layout = ({ window }) => {
                   fontWeight: '400',
                   letterSpacing: '2px',
 
-                  fontSize: { xs: '1.8rem', sm: '1.1rem', md: '1.5rem' },
+                  fontSize: { xs: '1.4rem', sm: '1rem', md: '1.5rem' },
                 }}
               >
                 Health Lounge Papamoa

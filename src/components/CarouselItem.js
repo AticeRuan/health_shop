@@ -36,8 +36,7 @@ const CarouselItem = ({
 
           flexDirection: 'column',
           alignItems: 'center',
-          width: { xs: 'auto', sm: '100%' },
-          height: { xs: '70%', sm: '100%', lg: '100vh' },
+          height: '100%',
         }}
       >
         <Typography
@@ -46,7 +45,7 @@ const CarouselItem = ({
           gutterBottom
           sx={{
             fontSize: { xs: '2rem', sm: '3rem', md: '6rem' },
-            mt: 7,
+            mt: 1,
             fontFamily: 'Archivo Black',
             backgroundImage: `url(${imageUrl})`,
             backgroundSize: 'cover',
