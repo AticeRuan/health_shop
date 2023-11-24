@@ -199,7 +199,7 @@ export const traditionalItems = [
     servicePrice: 15,
   },
   {
-    serviceName: 'GuaSha',
+    serviceName: 'Gua Sha',
     serviceDuration: '15 minutes',
     servicePrice: 15,
   },
