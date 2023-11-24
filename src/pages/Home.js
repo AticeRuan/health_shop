@@ -9,22 +9,21 @@ import {
   Box,
   Grid,
   Avatar,
-  Fade,
 } from '@mui/material'
 import block1 from '../assets/service_barckground.jpg'
 import block2 from '../assets/herbal.jpg'
 import SpaIcon from '@mui/icons-material/Spa'
-import Loader from '../components/Loader'
+// import Loader from '../components/Loader'
 import BackToTopButton from '../components/BackToTopButton'
 
 const Home = () => {
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000)
-  })
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 1000)
+  // })
 
   return (
     <>

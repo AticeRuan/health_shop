@@ -9,7 +9,7 @@ import {
   traditionalItems,
 } from '../components/utils'
 import { Pricing, FoldedTab } from '../components/services/Pricing'
-import background from '../assets/service_barckground.jpg'
+// import background from '../assets/service_barckground.jpg'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
 const Service = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'))
