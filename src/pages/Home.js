@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 import CarouselItem from '../components/CarouselItem'
 import { carouselItems } from '../components/utils'
