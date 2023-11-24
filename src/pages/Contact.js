@@ -66,7 +66,7 @@ const Contact = () => {
                     color="#fff"
                     sx={{ fontSize: '1rem' }}
                   >
-                    Contact us for bookings, inquiries, or to discover the
+                    Contact us for bookings, enquiries, or to discover the
                     wisdom of Huangdi Neijing and Chinese health concepts
                   </Typography>
                 </Box>
@@ -102,7 +102,7 @@ const Contact = () => {
             </Grid>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={6}>
+        <Grid item xs={12} sm={12} md={6} sx={{ mb: 5 }}>
           <EnquiryForm />
         </Grid>
       </Grid>

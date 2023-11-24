@@ -44,7 +44,7 @@ const CarouselItem = ({
           color="#fff"
           gutterBottom
           sx={{
-            fontSize: { xs: '2rem', sm: '3rem', md: '6rem' },
+            fontSize: { xs: '2rem', sm: '2.5rem', md: '5rem' },
             mt: 1,
             fontFamily: 'Archivo Black',
             backgroundImage: `url(${imageUrl})`,

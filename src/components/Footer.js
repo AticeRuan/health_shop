@@ -14,7 +14,10 @@ const Footer = () => {
         py: 2,
       }}
     >
-      <Typography variant="h6" sx={{ color: '#fff', fontSize: '1rem' }}>
+      <Typography
+        variant="h6"
+        sx={{ color: '#fff', fontSize: { xs: '0.8rem', md: '1rem' } }}
+      >
         {`Copyright © Health Lounge Papamoa ${year}`}
       </Typography>
     </Box>

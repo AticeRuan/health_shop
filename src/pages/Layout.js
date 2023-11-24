@@ -46,9 +46,9 @@ const Layout = ({ window }) => {
             <ListItemButton sx={{ textAlign: 'center' }}>
               <MuiLink component={Link} to={item.link}>
                 <ListItemText
-                  sx={{ color: 'text.secondary', fontFamily: 'Montserrat' }}
+                  sx={{ color: 'text.secondary' }}
                   primary={item.item}
-                />
+                ></ListItemText>
               </MuiLink>
             </ListItemButton>
           </ListItem>
