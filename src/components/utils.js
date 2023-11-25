@@ -98,8 +98,13 @@ export const massageItems = [
   },
   {
     serviceName: 'Full Body',
-    serviceDuration: '1 hour',
+    serviceDuration: '60 minutes',
     servicePrice: 70,
+  },
+  {
+    serviceName: 'Luxi Full Body',
+    serviceDuration: '90 minutes',
+    servicePrice: 90,
   },
   {
     serviceName: 'Reflexology',
@@ -111,22 +116,22 @@ export const massageItems = [
 export const eyebrowItems = [
   {
     serviceName: 'Eyebrows Shape',
-    serviceDuration: '15 minutes',
-    servicePrice: 15,
+    serviceDuration: '',
+    servicePrice: 8,
   },
   {
     serviceName: 'Eyebrows tinted',
-    serviceDuration: '20 minutes',
+    serviceDuration: '',
     servicePrice: 20,
   },
   {
     serviceName: 'Eyes Combo',
-    serviceDuration: '30 minutes',
-    servicePrice: 40,
+    serviceDuration: '',
+    servicePrice: 30,
   },
   {
     serviceName: 'Eyelashes tinted',
-    serviceDuration: '20 minutes',
+    serviceDuration: '',
     servicePrice: 20,
   },
 ]
@@ -134,47 +139,47 @@ export const eyebrowItems = [
 export const waxingItems = [
   {
     serviceName: 'Under Arms',
-    serviceDuration: '15 minutes',
+    serviceDuration: '',
     servicePrice: 15,
   },
   {
     serviceName: '1/2 Arms',
-    serviceDuration: '20 minutes',
+    serviceDuration: '',
     servicePrice: 20,
   },
   {
     serviceName: '1/2 Legs',
-    serviceDuration: '30 minutes',
+    serviceDuration: '',
     servicePrice: 30,
   },
   {
     serviceName: 'Full Arms',
-    serviceDuration: '40 minutes',
+    serviceDuration: '',
     servicePrice: 40,
   },
   {
     serviceName: 'Full Legs',
-    serviceDuration: '40 minutes',
+    serviceDuration: '',
     servicePrice: 40,
   },
   {
     serviceName: 'Full Face',
-    serviceDuration: '30 minutes',
+    serviceDuration: '',
     servicePrice: 30,
   },
   {
     serviceName: ' Eyebrow, Lip and Chin',
-    serviceDuration: '30 minutes',
+    serviceDuration: '',
     servicePrice: 30,
   },
   {
     serviceName: 'Bikini',
-    serviceDuration: '25 minutes',
+    serviceDuration: '',
     servicePrice: 25,
   },
   {
     serviceName: 'Brazilian',
-    serviceDuration: '45 minutes',
+    serviceDuration: '',
     servicePrice: 45,
   },
 ]
@@ -208,22 +213,22 @@ export const traditionalItems = [
 export const manicureItems = [
   {
     serviceName: 'Polish',
-    serviceDuration: '20 minutes',
+    serviceDuration: '',
     servicePrice: 15,
   },
   {
     serviceName: 'Shape and Polish',
-    serviceDuration: '40 minutes',
+    serviceDuration: '',
     servicePrice: 20,
   },
   {
     serviceName: 'Manicure',
-    serviceDuration: '50 minutes',
+    serviceDuration: '',
     servicePrice: 30,
   },
   {
     serviceName: 'Pedicure',
-    serviceDuration: '50 minutes',
+    serviceDuration: '',
     servicePrice: 35,
   },
 ]
