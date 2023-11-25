@@ -192,7 +192,7 @@ export const facialItems = [
   },
   {
     serviceName: 'Complete Classic Facial',
-    serviceDuration: '1 hour',
+    serviceDuration: '60 minutes',
     servicePrice: 60,
   },
 ]
