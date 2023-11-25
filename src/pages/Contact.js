@@ -12,7 +12,7 @@ const Contact = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 4000)
+    }, 2000)
   }, [])
 
   return loading ? (
@@ -20,7 +20,7 @@ const Contact = () => {
       <CircularProgress />
     </Box>
   ) : (
-    <Fade in timeout={1000}>
+    <Fade in timeout={2000}>
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
           <Box
