@@ -118,13 +118,7 @@ const Service = () => {
                       serviceCategory="Massage"
                       serviceItems={massageItems}
                       isSmallScreen={isSmallScreen}
-                      intro="Consider a massage experience that goes beyond physical
-                  relaxation, tapping into the energetic pathways
-                  identified by Huangdi Neijing. By incorporating
-                  acupressure or reflexology techniques, practitioners can
-                  stimulate specific points along the meridians, promoting
-                  the smooth flow of Qi and fostering balance within the
-                  body"
+                      intro="Elevate your well-being with our refined massage services, inspired by the health preservation principles of 'Huangdi Neijing' and the timeless theories of traditional Chinese medicine found in 'Fen Han Lun' and 'Jin Gui Yao Lue.' We actively apply these principles, using massage techniques and strategic acupoint selection to stimulate reflexes to specific organs. Experience the positive effects as meridians are cleared, blood circulation is enhanced, internal balance is achieved, and work-related fatigue is alleviated. Whether you suffer from lower back pain, headaches, or shoulder discomfort, our massages offer effective relief, promoting a revitalized and balanced you."
                     />
                   </TabPanel>
                   <TabPanel value="2">
