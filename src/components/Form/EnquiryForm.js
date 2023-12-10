@@ -8,14 +8,6 @@ const EnquiryForm = () => {
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
-  //  const handleOnClick=(e)=>{
-  //   e.preventDefault();
-  //   setName("")
-  //   setSubject("")
-  //   setEmail("")
-  //   setPhone("")
-  //   setMessage("")
-  //  }
 
   return (
     <>
@@ -95,7 +87,7 @@ const EnquiryForm = () => {
               variant="outlined"
               sx={{ mt: { xs: 2, sm: 2, md: 5 } }}
             >
-              Send Meassage
+              Send Message
             </Button>
           </Grid>
 

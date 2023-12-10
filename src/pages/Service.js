@@ -12,6 +12,7 @@ import { Pricing, FoldedTab } from '../components/services/Pricing'
 // import background from '../assets/service_barckground.jpg'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
 import CircularProgress from '@mui/material/CircularProgress'
+import { Link } from 'react-router-dom'
 const Service = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'))
   const [expanded, setExpanded] = useState(null)
@@ -107,7 +108,12 @@ const Service = () => {
                 <TabContext value={value}>
                   <TabList onChange={handleTabChange} centered>
                     <Tab label="Massage" value="1" indicatorColor="secondary" />
-                    <Tab label="Facial" value="2" />
+                    <Tab
+                      label="Facial"
+                      value="2"
+                      component={Link}
+                      to="/services/facial"
+                    />
                     <Tab label="Waxing" value="3" />
                     <Tab label="EyeBrows" value="4" />
                     <Tab label="Manicure & Pedicure" value="5" />
