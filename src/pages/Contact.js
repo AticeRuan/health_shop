@@ -3,6 +3,7 @@ import { Grid, Box, Typography, Divider, Fade } from '@mui/material'
 import background from '../assets/contact_background.jpg'
 import EnquiryForm from '../components/Form/EnquiryForm'
 import SpaIcon from '@mui/icons-material/Spa'
+// eslint-disable-next-line
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import PhoneIcon from '@mui/icons-material/Phone'
 import CircularProgress from '@mui/material/CircularProgress'
@@ -71,7 +72,7 @@ const Contact = () => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid item xs={12} sx={{ mt: 5 }}>
+              {/* <Grid item xs={12} sx={{ mt: 5 }}>
                 <Box
                   sx={{
                     display: 'flex',
@@ -84,7 +85,7 @@ const Contact = () => {
                     40 Franks Way, Papamoa, Tauranga
                   </Typography>
                 </Box>
-              </Grid>
+              </Grid> */}
               <Grid item xs={12} sx={{ m: 2 }}>
                 <Box
                   sx={{
